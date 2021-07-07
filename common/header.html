@@ -2,7 +2,6 @@
 const { iconNode } = require("discourse-common/lib/icon-library");
 
 api.decorateWidget("header-icons:before", helper => {
-  if (!Discourse.User.current()) return;
 
   let container = api.container,
     ntb_title = settings.New_topic_button_title,
