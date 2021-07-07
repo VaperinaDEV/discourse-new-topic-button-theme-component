@@ -12,7 +12,8 @@ api.decorateWidget("header-icons:before", helper => {
     ntb_button_helper = "li#header-create-topic",
     ntb_label_helper = "span.d-button-label",
     composerModal = require("discourse/models/composer").default,
-    
+    composerController = container.lookup("controller:composer");
+
   const createTopic = function() {
     composerController.open({
       action: composerModal.CREATE_TOPIC,
