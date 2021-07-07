@@ -5,10 +5,6 @@ api.decorateWidget("header-icons:before", helper => {
   if (!Discourse.User.current()) return;
 
   let container = api.container,
-    ntb_text = settings.New_topic_button_text,
-    ntb_title = settings.New_topic_button_title.length
-      ? settings.New_topic_button_title
-      : ntb_text,
     ntb_icon = settings.New_topic_button_icon,
     ntb_button_class = "header-dropdown-toggle icon btn-flat",
     ntb_button_helper = "li#header-create-topic",
@@ -35,10 +31,9 @@ api.decorateWidget("header-icons:before", helper => {
     ntb_button_helper,
     {
       className: ntb_button_class,
-      title: ntb_title,
       onclick: createTopic
     },
-    [iconNode(ntb_icon), helper.h(ntb_label_helper, ntb_text)]
+    [iconNode(ntb_icon)]
   );
 });
 </script>
