@@ -3,12 +3,6 @@ const { iconNode } = require("discourse-common/lib/icon-library");
 
 if (api.getCurrentUser() === null) return false;
 
-if (categoryReadOnlyBanner && !hasDraft) {
-  return "btn-flat disabled";
-  } else {
-  return "btn-flat";
-}
-
 api.decorateWidget("header-icons:before", helper => {
 
   let container = api.container,
