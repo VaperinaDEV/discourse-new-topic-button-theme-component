@@ -1,4 +1,4 @@
-#header-create-button {
+#header-create-topic {
   display: flex;
   justify-content: flex-start;
   width: 100%;
@@ -21,16 +21,16 @@
 }
 
 @media (max-width: 850px) {
-  #header-create-button span {
+  #header-create-topic span {
     display: none;
   }
-  #new-create-topic i {
+  #header-create-topic i {
     margin-right: 0;
   }
 }
 
 @if $New_topic_button_text == "" {
-  #header-create-button span {
+  #header-create-topic span {
     display: none;
   }
   #new-create-topic i {
