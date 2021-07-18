@@ -1,5 +1,27 @@
+#header-create-button {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  color: var(--primary-high);
+  background: var(--vaperina-bg);
+  height: 100%;
+  margin: 0;
+  padding: 0.8em 3em 0.8em 1em;
+  border: none;
+  border-radius: 25px;
+  transition: background .15s ease-out;
+  svg {
+    margin-right: 0.5em;
+    width: 0.7em;
+  }
+  &:hover,
+  &focus {
+   background: var(--vaperina-btn);
+  }
+}
+
 @media (max-width: 850px) {
-  #new-create-topic span {
+  #header-create-button span {
     display: none;
   }
   #new-create-topic i {
@@ -8,7 +30,7 @@
 }
 
 @if $New_topic_button_text == "" {
-  #new-create-topic span {
+  #header-create-button span {
     display: none;
   }
   #new-create-topic i {
