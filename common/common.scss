@@ -25,9 +25,6 @@
   #header-create-topic {
     display: none;
   }
-  button#create-topic {
-    display: flex;
-  }
 }
 
 @if $New_topic_button_text == "" {
