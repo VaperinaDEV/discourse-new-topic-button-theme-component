@@ -20,12 +20,9 @@
   }
 }
 
-@media (max-width: 850px) {
-  #header-create-topic span {
+@media (max-width: 950px) {
+  #header-create-topic {
     display: none;
-  }
-  #header-create-topic i {
-    margin-right: 0;
   }
 }
 
