@@ -1,3 +1,14 @@
+body {
+  &.navigation-topics,
+  &.navigation-categories,
+  &.category-header,
+  &.tags-page {
+   #header-create-topic {
+     display: none;
+    }
+  }
+}
+
 #header-create-topic {
   display: flex;
   justify-content: flex-start;
