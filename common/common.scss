@@ -3,7 +3,7 @@
   justify-content: flex-start;
   width: 100%;
   color: var(--primary-high);
-  background: var(--vaperina-bg);
+  background: var(--vaperina-header-search);
   height: 100%;
   margin: 0;
   padding: 0.6em 3em 0.6em 1em;
@@ -17,7 +17,7 @@
   }
   &:hover,
   &focus {
-   background: var(--vaperina-btn);
+   background: var(--vaperina-header-search-focus);
   }
 }
 
